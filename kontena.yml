@@ -4,8 +4,7 @@ services:
     image: nevalla/todo-example:latest
     extends:
       file: docker-compose.yml
-      service: web
-    instances: 3
+      service: web    
     environment:
       - MONGODB_URI=mongodb://${project}-mongodb.kontena.local/todo_production
 

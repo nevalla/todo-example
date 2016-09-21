@@ -26,6 +26,7 @@ services:
 
   app:
     image: nevalla/todo-example:latest
+    instances: 3
     links:
       - mongodb:mongodb
       - loadbalancer
