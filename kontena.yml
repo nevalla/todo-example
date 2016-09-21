@@ -5,6 +5,7 @@ services:
     extends:
       file: docker-compose.yml
       service: web
+    instances: 3
     environment:
       - MONGODB_URI=mongodb://${project}-mongodb.kontena.local/todo_production
 
